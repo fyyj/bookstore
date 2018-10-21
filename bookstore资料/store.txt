@@ -1,0 +1,74 @@
+一：环境
+	创建项目使用的工具
+		MyEclipse Google浏览器 Navicat Premium12.0
+	语言
+		Java -1.8  mysql -5.6.41   js css html
+	服务器
+		Tomcat7.0
+	技术
+		Servlet Jsp JavaBean MySQL c3p0数据库连接技术
+	所需jar包
+		c3p0-0.9.1.2.jar 配置连接数据库的参数 Driverclass jdbcurl user  password等
+		commons-beanutils-1.8.3.jar		封装数据
+		commons-logging-1.1.1.jar		配合beanutils使用
+		commons-dbutils-1.4.jar			获取数据库连接
+		commons-fileupload-1.2.1.jar		上传文件
+		commons-io-1.4.jar			拷贝
+		jstl.jar				sun提供的标准标签库
+		standard.jar				配合jstl使用
+		mysql-connector-java-5.0.8-bin.jar	连接mysql需要的jar
+二：项目需求
+	创建一个网上商城，用于售卖图书，前台展示给用户，提供注册、登录等一系列功能，
+     后台便于管理员对数据库的管理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     三：项目流程
+	准备工作
+		1.创建数据库，根据项目需求，大概可以建立用户表users(存储用户详细信息)、
+			商品表products(存储商品信息)、订单表orders(存储订单信息)、
+			订单条项orderItems(存储订单id和商品id)、
+			公告表notices(存储公告信息)
+	前台
+		2.建立前端jsp页面
+		3.实现注册功能
+		4.登录
+		5.商品分类 
+		6.商品搜索 模糊查询 
+		7.添加商品到购物车，从购物车删除商品
+		8.生成订单，删除订单，支付订单
+		9.显示最新一条公告
+	后台
+	   商品管理
+		10.查询商品--多条件查询 无条件查询
+		11.添加商品--添加图片(流的使用)
+		12.编辑商品
+		13.删除商品
+	   订单管理
+	   	14.查询订单
+		15.删除订单
+	   公告管理
+	   	16.查询公告
+		17.修改公告
+		18.添加公告
+		19.删除公告
